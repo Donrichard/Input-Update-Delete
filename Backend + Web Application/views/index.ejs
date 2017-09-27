@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<title>User Data</title>
+</head>
+<body>
+	<h2>Node.js (Express) - MongoDB (mLab)</h2>
+	<br><br><br>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../javascripts/global.js"></script>
+	<div id="wrapper">
+		<div id="userList">
+		<h2>User List</h2>
+			<table>
+				<thead>
+					<th>NIM</th>
+					<th>Name</th>
+					<th>Course</th>
+					<th>Score</th>
+					<th>Delete?</th>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+		<div id="userInfo">
+			<h2>Update User Info</h2>
+			<p>
+				<strong>NIM: </strong>
+				<input type="text", id="userInfoNim"><br>
+				<strong>Name: </strong>
+				<input type="text" id="userInfoName"><br>
+				<strong>Course: </strong>
+				<input type="text" id="userInfoCourse"><br>
+				<strong>Score: </strong>
+				<input type="text" id="userInfoScore"><br>
+			</p>
+			<button id="btnUpdateUser">Update User</button>
+		</div>
+		<div id="addUser">
+			<h2>Add User</h2>
+			<fieldset>
+				<input type="text" id="inputUserName", placeholder="Name">
+				<br>
+				<input type="text" id="inputUserNim", placeholder="NIM">
+				<br>
+				<input type="text" id="inputUserCourse", placeholder="Course">
+				<br>
+				<input type="text" id="inputUserScore", placeholder="Score">
+				<br>
+				<button id="btnAddUser">Add User</button>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>

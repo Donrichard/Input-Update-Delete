@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  h1= title
+  p Node.js - MongoDB (mLab)
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 User Info
+            p
+                strong NIM:
+                |  <span id='userInfoNim'></span>
+                br
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Course:
+                |  <span id='userInfoCourse'></span>
+                br
+                strong Score:
+                |  <span id='userInfoScore'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 User List
+        #userList
+            table
+                thead
+                    th NIM
+                    th Name
+                    th Delete?
+                tbody
+        // /USER LIST
+        
+        // ADD USER
+        h2 Add User
+        #addUser
+            fieldset
+                input#inputUserName(type='text', placeholder='Name')
+                br
+                input#inputUserNim(type='text', placeholder='NIM')
+                br
+                input#inputUserCourse(type='text', placeholder='Course')
+                br
+                input#inputUserScore(type='text', placeholder='Score')
+                br
+                button#btnAddUser Add User
+        // /ADD USER
+
+    // /WRAPPER
